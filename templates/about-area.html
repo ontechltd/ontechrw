@@ -1,0 +1,25 @@
+{% load static %}
+<section class="about-area pt-130 pb-130">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-thumb text-center">
+                    <img src="{% static 'images/olivier.jpg' %}" alt="">
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <h3 class="title">Perfect Solution Makes <span>A Successful <span>History</span></span></h3>
+                    <span>Something knows About Our Company</span>
+                    <p> We Provide high quality work that not only needs the need of the clients, but surpasses it.
+                        We also provide technical guidance and oversight to ensure that the work delivered is in accordance with technical standard of our clients.</p>
+                    <ul>
+                        <li><a class="main-btn " href="{% url 'about-us' %}">Learn More</a></li>
+                        <li><a class="" href="{% url 'home' %}">Let’s Get Started <i class="fal fa-long-arrow-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

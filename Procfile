@@ -1,0 +1,1 @@
+web: gunicorn ontechweb.wsgi --log-file -
