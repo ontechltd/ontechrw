@@ -71,7 +71,7 @@
 
     <!--====== PAGE TITLE PART START ======-->
 
-    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/coding_image_1920_640.jpg' %});">
+    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/' %});">
         <div class="banner-bg">
             <div class="container">
                 <div class="row">
@@ -83,12 +83,26 @@
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Service Details</li>
                                 </ol>
-                            </nav>
+                               
+                                
+                                <tr>
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                    <li class="breadcrumb-item active" aria-current="page">{{services.service_name}}</li><br>
+                                    <td>{{services.service_desc}}</td><br>
+        
+                                    <td><img src="{{services.service_image.url}}" alt="Service Photo" width="90" height="50"></td>
+                                
+                                </tr>
+                          
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+       
+    </nav>
         <div class="banner-shape-1">
         </div>
         <div class="banner-shape-2">
@@ -529,8 +543,8 @@
                             </ul>
                         </div>
                         <div class="team-content text-center">
-                            <h3 class="title">Patrick NDUNGUTSE</h3>
-                            <span>Lead Developer</span>
+                            <h3 class="title">Florentine MUKAMANA</h3>
+                            <span>Managing Director</span>
                         </div>
                     </div>
                 </div>

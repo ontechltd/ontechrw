@@ -17,7 +17,7 @@ def about_us(request):
 def services(request):
     services = Service.objects.all()
     context = {'services':services}
-    return render(request, 'base/services.html', context)
+    return render(request, 'base/service.html', context)
 
 def contact_us(request):
     
@@ -25,7 +25,7 @@ def contact_us(request):
     return render(request, 'base/contact-us.html', context)
 
 def service(request, pk_service):
-    
-    context = {}
+    services = Service.objects.get(id=pk_service)
+    context = {'services':services}
     return render(request, 'base/service.html', context)
 
