@@ -1,3 +1,4 @@
+from contextvars import Context
 from django.shortcuts import render
 from .models import Service
 
@@ -25,7 +26,14 @@ def contact_us(request):
     return render(request, 'base/contact-us.html', context)
 
 def service(request, pk_service):
-    
-    context = {}
+    services = Service.objects.get(id=pk_service)
+    context = {'services':services}
     return render(request, 'base/service.html', context)
 
+def team(request):
+    context = {}
+    return render(request, 'team_member.html', context)
+    
+def reachus(request):
+    context = {}
+    return render(request, 'reachus.html', context)

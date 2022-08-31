@@ -10,9 +10,9 @@
                         </div>
                         <div class="header-right-social d-flex justify-content-end align-items-center">
                             <ul class="d-none d-lg-block">
-                                <li>
+                                {% comment %} <li>
                                     <p><i class="fal fa-flag"></i> English</p>
-                                </li>
+                                </li> {% endcomment %}
                                 <li>
                                     <p><i class="fal fa-star"></i> Join With Us</p>
                                 </li>
@@ -74,6 +74,9 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="{% url 'services' %}">services </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'team' %}">Team </a>
+                                    </li>
                                     <!-- <li class="nav-item">
                                         <a class="nav-link" href="contact.html">Shop <i class="fal fa-angle-down"></i></a>
                                         <ul class="sub-menu">
@@ -87,7 +90,7 @@
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="navbar-btn d-none d-sm-block">
-                                <a class="main-btn" href="#">Consultations</a>
+                                <a class="main-btn" href="{% url 'reachus' %}">REACH US</a>
                             </div>
                         </nav>
                     </div> <!-- navigation -->

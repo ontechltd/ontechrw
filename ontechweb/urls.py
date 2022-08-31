@@ -23,8 +23,9 @@ urlpatterns = [
     path('about-us/', about_us, name='about-us'),
     path('services/', services, name='services'),
     path('service/<str:pk_service>', service, name='service'),
-    
-    path('contact-us', contact_us, name='contact-us' )
+    path('team', team, name='team' ),
+    path('contact-us', contact_us, name='contact-us' ),
+    path('reachus', reachus, name='reachus' ),
     
     
 ]

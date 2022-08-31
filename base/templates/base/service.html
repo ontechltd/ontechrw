@@ -71,7 +71,7 @@
 
     <!--====== PAGE TITLE PART START ======-->
 
-    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/coding_image_1920_640.jpg' %});">
+    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/' %});">
         <div class="banner-bg">
             <div class="container">
                 <div class="row">
@@ -81,14 +81,29 @@
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Service Details</li>
+                                    <li class="breadcrumb-item active" aria-current="page">Service Details / {{services.service_name}}</li>
                                 </ol>
-                            </nav>
+                               
+                                <table>
+                                <tr>
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <td>
+                                    <li class="breadcrumb-item active" aria-current="page">{{services.service_name}} </li></td></tr>
+                                    <td> {{services.service_desc}}</td>
+                                    {% comment %} <li>{{services.service_image}}</li> {% endcomment %}
+        
+                                 
+                                </tr>
+                            </table>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+       
+    </nav>
         <div class="banner-shape-1">
         </div>
         <div class="banner-shape-2">
@@ -529,8 +544,8 @@
                             </ul>
                         </div>
                         <div class="team-content text-center">
-                            <h3 class="title">Patrick NDUNGUTSE</h3>
-                            <span>Lead Developer</span>
+                            <h3 class="title">Florentine MUKAMANA</h3>
+                            <span>Managing Director</span>
                         </div>
                     </div>
                 </div>
