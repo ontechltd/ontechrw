@@ -63,7 +63,7 @@
     {% include 'header.html' %}
     <!--====== PAGE TITLE PART START ======-->
 
-    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/coding_image_1920_640.jpg' %});">
+    <section class="banner-area page-title bg_cover" style="background-image: url({% static 'images/' %});">
         <div class="banner-bg">
             <div class="container">
                 <div class="row">
@@ -77,11 +77,30 @@
                                 </ol>
                             </nav>
                         </div>
+                        
+                       
+                        <div class="card card-body">
+                            <table class="table">
+                                <tr>
+                                    <th>Service Name </th>
+                                    <th>Service description</th>
+                                                                
+                                </tr>
+                                {% for i in services %}
+                                    <tr>
+                                        <td>{{i.service_name}}</td>
+                                        <td>{{i.service_desc}}</td>
+                                      
+                                    </tr>
+                                {% endfor %}
+                                
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="banner-shape-1">
+        {% comment %} <div class="banner-shape-1"> {% endcomment %}
         </div>
         <div class="banner-shape-2">
             <img src="{% static 'images/banner-shape-1.png' %}" alt="">
@@ -107,26 +126,26 @@
                 <div class="col-lg-6 col-sm-9">
                     <div class="project-item mt-30">
                         <div class="project-thumb">
-                            <img src="{% static 'images/project-1.jpg' %}" alt="Project">
+                            <img src="{% static 'images/psver.jpeg' %}" alt="Project">
                         </div>
                         <div class="project-content  text-center">
-                            <h4 class="title">Events IT Solutions</h4>
+                            <h4 class="title">Data Processing and Hosting</h4>
                             <span>Important Of IT Services In Business</span>
-                            <p>Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone</p>
-                            <a href="case-details.html">View Details <i class="fal fa-long-arrow-right"></i></a>
+                            <p>Data Processing Services means a primarily automated service provided to a business or other organization where the primary object of the service is the systematic performance of operations by the service provider on data</p>
+                            <a>View Details <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-9">
                     <div class="project-item mt-30">
                         <div class="project-thumb">
-                            <img src="{% static 'images/project-2.jpg' %}" alt="Project">
+                            <img src="{% static 'images/pdo more.jpeg' %}" alt="Project">
                         </div>
                         <div class="project-content  text-center">
-                            <h4 class="title">Product Marketing</h4>
+                            <h4 class="title">Software/Application Marketing</h4>
                             <span>Important Of IT Services In Business</span>
-                            <p>Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone</p>
-                            <a href="case-details.html">View Details <i class="fal fa-long-arrow-right"></i></a>
+                            <p>What is marketing software? Marketing software refers to tools that help businesses successfully execute campaigns, tap into their target markets and convert leads into sales. Companies, regardless of size, can benefit from marketing tools, allowing them to maximize their resources and get rid of repetitive tasks.</p>
+                            <a>View Details <i class="fal fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
