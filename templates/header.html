@@ -18,10 +18,10 @@
                                 </li>
                             </ul>
                             <ul class="d-none d-sm-block">
-                                <li><a href="https://www.linkedin.com/in/ontech-ltd-481382230"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.facebook.com/ontechltd"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ontech-ltd-481382230" target= "_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" target= "_blank"></i></a></li>
+                                <li><a href="https://www.facebook.com/ontechltd" target= "_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram" target= "_blank"></i></a></li>
                             </ul>
                         </div>
                     </div> <!-- header top item -->
@@ -47,10 +47,20 @@
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="{% url 'home' %}">home </a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'services' %}">services </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'team' %}">Team </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{% url 'about-us' %}">about </a>
                                     </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'contact-us' %}">Contact</a>
+                                    </li>                                   
                                     <!-- <li class="nav-item">
                                         <a class="nav-link" href="#">Pages <i class="fal fa-angle-down"></i></a>
                                         <ul class="sub-menu">
@@ -71,12 +81,7 @@
                                         </ul>
                                     </li> -->
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{% url 'services' %}">services </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{% url 'team' %}">Team </a>
-                                    </li>
+                                    
                                     <!-- <li class="nav-item">
                                         <a class="nav-link" href="contact.html">Shop <i class="fal fa-angle-down"></i></a>
                                         <ul class="sub-menu">
@@ -84,9 +89,7 @@
                                             <li><a href="product-details.html">Product Details</a></li>
                                         </ul>
                                     </li> -->
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="{% url 'contact-us' %}">Contact</a>
-                                    </li>
+                                    
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="navbar-btn d-none d-sm-block">
